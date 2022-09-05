@@ -1,0 +1,9 @@
+@import "../variable.scss";
+
+$image_directory_path: "/wp-content/themes/weapons/images/";
+
+.mv {
+  height: 400px;
+  width: 500px;
+  background-image: url(#{$image_directory_path}mv.jpeg);
+}
