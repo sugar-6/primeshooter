@@ -6,13 +6,13 @@ const sass = require("gulp-sass")(require("sass"));
 // style.scssの監視タスクを作成する
 gulp.task("default", () => {
   // ★ style.scssファイルを監視
-  return gulp.watch("app/public/wp-content/themes/waepon/css/**/*.scss", () => {
+  return gulp.watch("app/public/wp-content/themes/weapon/css/**/*.scss", () => {
     // style.scssの更新があった場合の処理
 
     // style.scssファイルを取得
     return (
       gulp
-        .src("app/public/wp-content/themes/waepon/css/style.scss")
+        .src("app/public/wp-content/themes/weapon/css/style.scss")
         // Sassのコンパイルを実行
         .pipe(
           sass({
@@ -23,7 +23,7 @@ gulp.task("default", () => {
             .on("error", sass.logError)
         )
         // cssフォルダー以下に保存
-        .pipe(gulp.dest("app/public/wp-content/themes/waepon/css"))
+        .pipe(gulp.dest("app/public/wp-content/themes/weapon"))
     );
   });
 });
