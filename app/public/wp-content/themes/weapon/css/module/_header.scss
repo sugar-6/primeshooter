@@ -1,0 +1,18 @@
+.header {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  &-top {
+  }
+  &-nav {
+    ul {
+      display: flex;
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

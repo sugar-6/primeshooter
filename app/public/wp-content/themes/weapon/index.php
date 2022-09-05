@@ -15,11 +15,28 @@
 </head>
 
 <body>
-  <section class="mv">
+  <!-- header -->
+  <header class="header">
+    <div class="header-top">
+      <p>
+        Prime<br>Shooter
+      </p>
+    </div>
+    <div class="header-nav">
+      <ul>
+        <li><a href="">ブキ性能</a></li>
+        <li><a href="">ギア構成</a></li>
+        <li><a href="">派生</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- /header -->
 
-    <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/mv.jpeg" alt=""> -->
-    <p></p>
+  <!-- mv -->
+  <section class="mv">
+    <h1 class="mv-h1">プライムシューターベッチュー</h1>
   </section>
+  <!-- /mv -->
 </body>
 </html>
 
