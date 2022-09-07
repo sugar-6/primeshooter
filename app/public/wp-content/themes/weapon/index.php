@@ -5,6 +5,9 @@
 <title>Prime Shooter</title>
 <meta name="description" content="プライムシューターのファンサイトです">
 <!-- <meta name="keywords" content="サイトキーワードを,で区切って入力"> -->
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@4.5.1/dist/css/swiper.min.css"/>
+<script src="//cdn.jsdelivr.net/npm/swiper@4.5.1/dist/js/swiper.min.js"></script> 
 <?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 
@@ -34,21 +37,53 @@
   <!-- /header -->
 
   <!-- mv -->
+<!--
   <section class="mv js-mv">
-    <h1 class="mv--h1 js-mv--h1">プライムシューター</h1>
+    <div class="mv--bg _1 _selected">
+      <h1 class="mv--h1 js-mv--h1">プライムシューター</h1>
+    </div>
+    <div class="mv--bg _2">
+      <h1 class="mv--h1 js-mv--h1">プライムシューター<br>コラボ</h1>
+    </div>
+    <div class="mv--bg _3">
+      <h1 class="mv--h1 js-mv--h1">プライムシューター<br>ベッチュー</h1>
+    </div>
     <div class="mv--weaponSelectorContainer">
-      <div class="mv--weaponSelector selected" data-weapon-id=1 data-weapon-name="プライムシューター">
+      <div class="mv--weaponSelector _selected" data-weapon-id=1>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mv--weapon1.jpeg" alt="">
       </div>
-      <div class="mv--weaponSelector" data-weapon-id=2 data-weapon-name="プライムシューターコラボ">
+      <div class="mv--weaponSelector" data-weapon-id=2>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mv--weapon2.jpeg" alt="">
       </div>
-      <div class="mv--weaponSelector" data-weapon-id=3 data-weapon-name="プライムシューターベッチュー">
+      <div class="mv--weaponSelector" data-weapon-id=3>
         <img src="<?php echo get_template_directory_uri(); ?>/images/mv--weapon3.jpeg" alt="">
       </div>
     </div>
   </section>
+-->
   <!-- /mv -->
+
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mv--weapon1.jpeg');">
+        <h1 class="swiper--h1">プライムシューター</h1>
+      </div>
+      <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mv--weapon2.jpeg');">
+        <h1 class="swiper--h1">プライムシューター<br>コラボ</h1>
+      </div>
+      <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mv--weapon3.jpeg');">
+        <h1 class="swiper--h1">プライムシューター<br>ベッチュー</h1>
+      </div>
+    </div>
+ 
+    <!-- pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+ 
+    <!-- navigation buttons -->
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+  </div>
 </body>
 </html>
 

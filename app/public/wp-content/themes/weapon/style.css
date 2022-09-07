@@ -382,7 +382,7 @@ th {
   margin-top: 40px;
   color: white;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   width: 100%;
 }
@@ -412,15 +412,31 @@ th {
   position: relative;
   min-height: 100vh;
   width: 100%;
+}
+.mv--bg {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
   background: url(/wp-content/themes/weapon/images/mv--weapon1.jpeg) center/cover;
 }
-.mv--h1 {
+.mv--bg._1 {
+  z-index: 0;
+  background-image: url(/wp-content/themes/weapon/images/mv--weapon1.jpeg);
+}
+.mv--bg._2 {
+  z-index: -2;
+  background-image: url(/wp-content/themes/weapon/images/mv--weapon2.jpeg);
+}
+.mv--bg._3 {
+  z-index: -2;
+  background-image: url(/wp-content/themes/weapon/images/mv--weapon3.jpeg);
+}
+.mv--bg .mv--h1 {
   position: absolute;
   color: white;
   top: 20%;
   right: 58px;
   font-size: 2.5rem;
-  width: 22.5rem;
   font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
   font-weight: bold;
 }
@@ -437,4 +453,25 @@ th {
 }
 .mv--weaponSelectorContainer .mv--weaponSelector.selected {
   border: 1px solid white;
+}
+
+.swiper-wrapper .swiper-slide {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.swiper--h1 {
+  position: absolute;
+  color: white;
+  top: 20%;
+  right: 58px;
+  font-size: 2.5rem;
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
+  font-weight: bold;
+  z-index: 2;
 }
