@@ -387,7 +387,7 @@ th {
   width: 100%;
 }
 .header--top {
-  font-size: 36px;
+  font-size: 2.5rem;
   margin-left: 40px;
   padding: 6px 10px;
   border: 4px solid white;
@@ -408,53 +408,6 @@ th {
   color: white;
 }
 
-.mv {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-}
-.mv--bg {
-  position: absolute;
-  min-height: 100vh;
-  width: 100%;
-  background: url(/wp-content/themes/weapon/images/mv--weapon1.jpeg) center/cover;
-}
-.mv--bg._1 {
-  z-index: 0;
-  background-image: url(/wp-content/themes/weapon/images/mv--weapon1.jpeg);
-}
-.mv--bg._2 {
-  z-index: -2;
-  background-image: url(/wp-content/themes/weapon/images/mv--weapon2.jpeg);
-}
-.mv--bg._3 {
-  z-index: -2;
-  background-image: url(/wp-content/themes/weapon/images/mv--weapon3.jpeg);
-}
-.mv--bg .mv--h1 {
-  position: absolute;
-  color: white;
-  top: 20%;
-  right: 58px;
-  font-size: 2.5rem;
-  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
-  font-weight: bold;
-}
-.mv--weaponSelectorContainer {
-  position: absolute;
-  bottom: 30px;
-  left: 45px;
-}
-.mv--weaponSelectorContainer .mv--weaponSelector {
-  margin: 5px 0;
-}
-.mv--weaponSelectorContainer .mv--weaponSelector img {
-  width: 150px;
-}
-.mv--weaponSelectorContainer .mv--weaponSelector.selected {
-  border: 1px solid white;
-}
-
 .swiper-wrapper .swiper-slide {
   background-position: center center;
   background-size: cover;
@@ -471,7 +424,62 @@ th {
   top: 20%;
   right: 58px;
   font-size: 2.5rem;
-  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
+  font-family: "MS Pゴシック";
   font-weight: bold;
   z-index: 2;
+}
+
+.main {
+  background: #1e1e1e;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.main--h2 {
+  display: block;
+  font-size: 4rem;
+  padding: 20px 0;
+}
+.main--txt {
+  display: block;
+  font-size: 1.5rem;
+  margin: 20px auto;
+}
+.main .fade {
+  transition: all 2000ms;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0px, 50px);
+}
+.main .fadein {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+
+.derive {
+  background: #1e1e1e;
+  color: white;
+  display: flex;
+}
+.derive--main {
+  width: 80%;
+}
+.derive--main img {
+  width: 100%;
+}
+.derive--accessories {
+  width: 20%;
+}
+.derive--accessories__sub {
+  width: 100%;
+}
+.derive--accessories__sub img {
+  width: 100%;
+}
+.derive--accessories__special {
+  width: 100%;
+}
+.derive--accessories__special img {
+  width: 100%;
 }

@@ -36,33 +36,6 @@
   </header>
   <!-- /header -->
 
-  <!-- mv -->
-<!--
-  <section class="mv js-mv">
-    <div class="mv--bg _1 _selected">
-      <h1 class="mv--h1 js-mv--h1">プライムシューター</h1>
-    </div>
-    <div class="mv--bg _2">
-      <h1 class="mv--h1 js-mv--h1">プライムシューター<br>コラボ</h1>
-    </div>
-    <div class="mv--bg _3">
-      <h1 class="mv--h1 js-mv--h1">プライムシューター<br>ベッチュー</h1>
-    </div>
-    <div class="mv--weaponSelectorContainer">
-      <div class="mv--weaponSelector _selected" data-weapon-id=1>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/mv--weapon1.jpeg" alt="">
-      </div>
-      <div class="mv--weaponSelector" data-weapon-id=2>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/mv--weapon2.jpeg" alt="">
-      </div>
-      <div class="mv--weaponSelector" data-weapon-id=3>
-        <img src="<?php echo get_template_directory_uri(); ?>/images/mv--weapon3.jpeg" alt="">
-      </div>
-    </div>
-  </section>
--->
-  <!-- /mv -->
-
   <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
@@ -84,6 +57,11 @@
     <div class="swiper-button-prev swiper-button-white"></div>
     <div class="swiper-button-next swiper-button-white"></div>
   </div>
+
+  <section class="main">
+    <h2 class="main--h2 fade">長い射程とブレない弾道</h2>
+    <p class="main--txt fade">サンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキスト</p>
+  </section>
 </body>
 </html>
 

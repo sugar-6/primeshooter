@@ -1,0 +1,28 @@
+@import "../variable";
+
+.derive {
+  background: $main_background_color;
+  color: $white;
+  &--main {
+    width: 80%;
+    img {
+      width: 100%;
+    }
+  }
+  display: flex;
+  &--accessories {
+    width: 20%;
+    &__sub {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__special {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

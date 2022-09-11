@@ -1,0 +1,33 @@
+@import "../variable";
+
+.main {
+  background: $main_background_color;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+
+  &--h2 {
+    display: block;
+    font-size: 4rem;
+    padding: 20px 0;
+  }
+
+  &--txt {
+    display: block;
+    font-size: 1.5rem;
+    margin: 20px auto;
+  }
+
+  .fade {
+    transition: all 2000ms;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(0px, 50px);
+  }
+
+  .fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+  }
+}

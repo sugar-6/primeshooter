@@ -1,3 +1,5 @@
+@import "../variable";
+
 .swiper-wrapper .swiper-slide {
   background-position: center center;
   background-size: cover;
@@ -10,11 +12,11 @@
 
 .swiper--h1 {
   position: absolute;
-  color: white;
+  color: $white;
   top: 20%;
   right: 58px;
   font-size: 2.5rem;
-  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN";
+  font-family: "MS Pゴシック";
   font-weight: bold;
   z-index: 2;
 }
