@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Prime Shooter</title>
 <meta name="description" content="プライムシューターのファンサイトです">
-<!-- <meta name="keywords" content="サイトキーワードを,で区切って入力"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@4.5.1/dist/css/swiper.min.css"/>
 <script src="//cdn.jsdelivr.net/npm/swiper@4.5.1/dist/js/swiper.min.js"></script> 
@@ -28,15 +28,15 @@
     </div>
     <div class="header--nav">
       <ul>
-        <li><a href="">ブキ性能</a></li>
-        <li><a href="">ギア構成</a></li>
-        <li><a href="">派生</a></li>
+        <li><a href="">ブキ性能（準備中）</a></li>
+        <li><a href="">ギア構成（準備中）</a></li>
+        <li><a href="/derive">派生</a></li>
       </ul>
     </div>
   </header>
   <!-- /header -->
 
-  <div class="swiper-container">
+  <div class="swiper-container _pc">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <div class="swiper-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mv--weapon1.jpeg');">
@@ -60,6 +60,8 @@
 
   <section class="main">
     <h2 class="main--h2 fade">長い射程とブレない弾道</h2>
+    <p class="main--txt fade">サンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキスト</p>
+    <h2 class="main--h2 fade">圧倒的なキル速度</h2>
     <p class="main--txt fade">サンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキストサンプルテキスト<br>サンプルテキストサンプルテキスト</p>
   </section>
 </body>
